@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LOgin</title>
+	<style type="text/css">
+		
+		*{
+			padding: 0;
+			margin: 0;
+
+		}
+		.background{
+			height: 100vh;
+			width: 100%;
+			background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(background.png);
+			background-size: cover;
+			background-position: center;
+			position: relative;
+		}
+		.login-page{
+			width: 360px;
+			padding: 10% 0 0;
+			margin: auto;
+		}
+		.form {
+			position: relative;
+			z-index: 1;
+			background-color:orange;
+			max-width: 360px;
+			margin: 0 auto;
+			padding: 45px;
+			text-align: center;
+		}
+		.form input{
+			font-family: "Roboto",sans-sarif;
+			outline: 1;
+			background-color:#121212;
+			width: 100%;
+			margin: 0 0 15px;
+			padding: 15px;
+			box-sizing: border-box;
+			font-size: 14px;
+			color: #fff;
+
+
+
+		}
+		.form button{
+				text-transform: uppercase;
+				font-family: sans-serif "Robot";
+				outline: 0;
+				background-color: #4CAF50;
+				width: 100%;
+				border:0;
+				padding: 15px;
+				color:#FFFFFF;
+				font-size: 14px;
+				cursor: pointer;
+
+					
+		}
+		.form button:hover, .form button:active{
+			background:#43A047;
+		}
+		.form .message{
+			margin: 15px 0 0;
+			color: red;
+			font-weight: bold;
+			font-style: italic;
+
+		}
+		.head{
+				color: white;
+				font-size: 40px;
+				margin-top: 10px;
+				padding: 0 20px;
+			}
+			
+			.form .message a{
+				text-decoration: none;
+				color: blue;
+			}
+			.form .registration-form{
+				display: none;
+
+			}
+			.message1 a{
+				color: red;
+				text-decoration: none;
+			}
+	</style>
+</head>
+<body>
+	<div class="background">
+			<div class="login-page">
+					<div class="form">	
+
+						<form class="login-form" action="login.html" method="POST">
+								
+ 							<input type="text" placeholder="User name" id="username">
+ 							<input type="text" placeholder="Password" id="Password">
+ 							<input type="submit"  value="Login" onclick="validate()">
+ 							<p class="message">Not Rigisterd? <a href="#">Create</p>
+						</form>					
+						
+						<form class="registration-form">	
+
+								<input type="text" placeholder="User name" id="username">
+								<input type="text" placeholder="Password" id="Password">
+								<input type="text" placeholder="email-Id">	
+								<button  type="button">Create</button>
+								<p class="message">Already Rigisterd? <a href="#">Login</p>
+
+						</form>	
+
+					</div>		
+			</div>	
+	</div>
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript">
+		
+		$('.message a').click(function () {
+
+			$('form').animate({height:"toggle", opacity:"toggle"},"slow");
+
+
+		});
+					function validate() {
+			      var username=document.getElementById('username').value;
+			      var Password=document.getElementById(padding).nodeValue;
+			      if(username=="admin"&& Password=="user"){
+			      	alert("Login is Succesfull");
+			      	return false;
+
+			      }
+			      else{
+
+			      }
+
+			      	alrt("Login Unsuccesfull");
+
+			}
+
+
+
+
+
+	</script>
+	<script type="text/javascript">
+		
+
+
+
+	</script>
+
+</body>
+</html>
